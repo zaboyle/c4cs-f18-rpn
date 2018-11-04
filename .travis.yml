@@ -1,8 +1,6 @@
 language: python
 python:
-        - "3.5"
-install:
-        - pip install -r requirements.txt
-
+        - "3.5" 
+#comment :-)
 script:
-        - test_rpn
+        - python test_rpn
