@@ -16,5 +16,5 @@ class TestBasics(unittest.TestCase):
             result = rpn.calculate('1 2 3 +')
 
     def test_exponent(self):
-        result = rpn.calculate('2 3 ^')
-        self.assertEqual(8, result)
+        result = rpn.calculate('2 4 ^')
+        self.assertEqual(16, result)
