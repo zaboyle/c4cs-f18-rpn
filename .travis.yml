@@ -4,3 +4,5 @@ python:
 #comment :-)
 script:
         - python test_rpn.py
+        - coverage run test_rpn.py
+        - coverage report
