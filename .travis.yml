@@ -4,6 +4,7 @@ python:
 #comment :-)
 install:
         - pip install coverage
+        - pip install colorama
 
 script:
         - python test_rpn.py
