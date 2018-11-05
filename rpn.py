@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+import readline
+from colorama import init, deinit
+from colorama import Fore, Back, Style
+
+init()
 
 def calculate(arg):
     stack = []
@@ -35,7 +40,13 @@ def main():
     while True:
         try:
             result = calculate(input('rpn calc> '))
-            print(result)
+            
+            if result < 0:
+                print(Fore.RED + str(result) + Fore.WHITE)
+            elif result > 0:
+                print(Fore.GREEN + str(result) + Fore.WHITE)
+            else:
+                print(Fore.BLUE + str(result) + Fore.WHITE)
         except ValueError:
             pass
 
