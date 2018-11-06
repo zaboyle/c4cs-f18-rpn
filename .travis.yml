@@ -4,8 +4,11 @@ python:
 #comment :-)
 install:
         - pip install coveralls
+        - pip install coverage
         - pip install colorama
 
 script:
         - python test_rpn.py
+after_success:
+        - coverage run test_rpn.py
         - coveralls
